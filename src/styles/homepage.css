@@ -15,7 +15,7 @@ body {
 
 /* --- Heading style: ultra-bold Montserrat matching design reference --- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', system-ui, sans-serif;
+  font-family: 'Consolas', system-ui, sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -29,14 +29,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Section label tag style (like CLOUD CAPTAIN in the image) */
 .section-tag {
-  font-family: 'Montserrat', system-ui, sans-serif;
+  font-family: 'Consolas', system-ui, sans-serif;
   font-weight: 800;
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #6a5acd;
-  background: rgba(106, 90, 205, 0.1);
-  border: 1px solid rgba(106, 90, 205, 0.25);
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(2, 1, 4);
   border-radius: 4px;
   padding: 2px 10px;
   display: inline-block;
@@ -69,15 +69,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #6a5acd;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #6a5acd;
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #6a5acd;
 }
 
 @keyframes scroll-up {
@@ -111,7 +111,7 @@ html:not(.dark) .section-bg-dots {
 /* Global homepage grid-line background pattern */
 .homepage-grid-bg {
   background-image:
-    linear-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px),
+    linear-gradient(rgb(0, 0, 0) 1px, transparent 1px),
     linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
 }

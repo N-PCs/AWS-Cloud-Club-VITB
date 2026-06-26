@@ -38,11 +38,23 @@ const DockNavbar: React.FC<DockNavbarProps> = ({ onNavigate, currentPage, theme,
     },
     {
       id: "about",
-      label: "About Us",
+      label: "Team",
       icon: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="7" r="4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M5 21a7 7 0 0114 0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+      ),
+    },
+    {
+      id: "gallery",
+      label: "Gallery",
+      icon: (
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  <circle cx="8.5" cy="8.5" r="1.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M21 15l-5-5L5 21" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
       ),
     },
     {
@@ -58,31 +70,13 @@ const DockNavbar: React.FC<DockNavbarProps> = ({ onNavigate, currentPage, theme,
       ],
     },
     {
-      id: "build",
-      label: "Build",
-      icon: (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
-        </svg>
-      ),
-      submenu: [
-        { label: "Capabilities", action: () => {} },
-        { label: "Toolbox", action: () => {} },
-        { label: "Workshops", action: () => {} },
-      ],
-    },
-    {
       id: "connect",
       label: "Connect",
       icon: (
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
         </svg>
-      ),
-      submenu: [
-        { label: "Events", action: () => {} },
-        { label: "Spaces", action: () => {} },
-      ],
+      )
     },
   ];
 

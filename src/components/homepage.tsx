@@ -456,12 +456,8 @@ const Homepage: React.FC<HomepageProps> = ({ onNavigate, theme, toggleTheme }) =
                         <span className="text-sm text-slate-600 dark:text-[#94a3b8] font-medium leading-snug">{item.text}</span>
                       </div>
                     ))}
-                  </div>
-
-                  <div className="flex gap-4 pt-4">
-                    <a href="#join" className="bg-[#6a5acd] text-white font-bold px-6 py-3 rounded-full hover:shadow-lg hover:shadow-indigo-500/20 dark:hover:shadow-purple-500/20 transition duration-150 text-sm">GET STARTED</a>
-                  </div>
                 </div>
+              </div>
 
                 {/* Event Photo Gallery */}
                 <div className="lg:col-span-1">
